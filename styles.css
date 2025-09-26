@@ -217,3 +217,30 @@
   margin-bottom: 40px;
   color: #e0e0e0;
 }
+/* Parallax background for services */
+.servicesSection {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1665325263201-8a71ca588c25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-attachment: fixed; /* makes the image stay in place as i scroll up*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Add a dark overlay so text is readable */
+.servicesSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
