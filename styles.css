@@ -22,3 +22,42 @@
   object-fit: cover;
   border-radius: 6px;
 }
+
+/* Home Section */
+.homeSection {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: changeBg 30s infinite;
+  filter: brightness(80%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homeSectionEdit {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Background Slideshow */
+@keyframes changeBg {
+  0% {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/031/616/740/large_2x/inside-clean-kitchen-of-a-modern-restaurant-or-mini-cafe-with-cooking-utensils-and-small-bar-counter-concept-by-ai-generated-free-photo.jpg");
+  }
+  33% {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/031/618/079/large_2x/inside-clean-kitchen-of-a-modern-restaurant-or-mini-cafe-with-cooking-utensils-and-small-bar-counter-concept-by-ai-generated-free-photo.jpg");
+  }
+  66% {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/031/618/051/large_2x/inside-clean-kitchen-of-a-modern-restaurant-or-mini-cafe-with-cooking-utensils-and-small-bar-counter-concept-by-ai-generated-free-photo.jpg");
+  }
+  100% {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/031/616/904/large_2x/inside-clean-kitchen-of-a-modern-restaurant-or-mini-cafe-with-cooking-utensils-and-small-bar-counter-concept-by-ai-generated-free-photo.jpg");
+  }
+}
