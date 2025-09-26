@@ -1,26 +1,44 @@
-.mealList {
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll at bottom of my page*/
+}
+/* Transparent Sidebar Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 160px; /* slim sidebar */
+  background: transparent; /* removes solid background */
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 10px;
+  gap: 15px;
+  z-index: 1000;
 }
 
-.meal-card {
-  flex: 1 1 calc(25% - 20px);
-  box-sizing: border-box;
-  border: 1px solid whitesmoke;
-  border-radius: 8px;
-  text-align: center;
-  background: whitesmoke;
-  padding: 10px;
-}
-
-.meal-image {
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  padding: 8px;
   border-radius: 6px;
+  text-shadow: 1px 1px 4px black; /* keeps visible on light bg */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar button:hover {
+  color: yellow;
+  transform: translateX(5px); /* little slide effect */
 }
 
 /* Home Section */
@@ -127,6 +145,7 @@
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
 /* Pagination */
 .pagination {
   text-align: center;
@@ -148,11 +167,12 @@
   background: #ffcc70;
   color: #222;
 }
+
 /* Cart Sidebar */
 .cart-sidebar {
   position: fixed;
   top: 0;
-  right: -400px;
+  right: -400px; /*to hide the cart on the right */
   width: 300px;
   height: 100%;
   background: #f9f9f9;
@@ -180,6 +200,7 @@
   padding: 2px 6px;
   cursor: pointer;
 }
+
 /* Other Sections */
 .servicesSection,
 .aboutSection,
@@ -200,7 +221,7 @@
   align-items: center;
   text-align: center;
 
-  /* Neutral grey gradient for smooth transition */
+  /* Neutral grey gradient for smooth transition to sync with dark theme*/
   background: linear-gradient(135deg, #2f2f2f, #4a4a4a);
   color: #f5f5f5;
 }
@@ -217,13 +238,117 @@
   margin-bottom: 40px;
   color: #e0e0e0;
 }
-/* Parallax background for services */
+
+/* Reviews grid */
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background: #3b3b3b;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #f0f0f0;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.review-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffcc70; /* highlight for names */
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  line-height: 1.4;
+}
+
+/* Contact Section with Parallax */
+.contactSection {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980")
+    center/cover fixed no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.contactSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contactSection h2,
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-info,
+#reviewForm {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+#reviewForm input,
+#reviewForm textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+#reviewForm button {
+  background: #ffcc70;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#reviewForm button:hover {
+  background: #ffaa00;
+}
+
+/* Parallax background for services section */
 .servicesSection {
   position: relative;
   min-height: 100vh;
   width: 100%;
   background: url("https://images.unsplash.com/photo-1665325263201-8a71ca588c25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-attachment: fixed; /* makes the image stay in place as i scroll up*/
+  background-attachment: fixed; /* makes the image stay in place */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +369,8 @@
   background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   z-index: 1;
 }
-/* Content stays above the overlay */
+
+/* Content stays above the overlay due to the parallax image background*/
 .servicesSection h2,
 .servicesSection p,
 .servicesSection ul {
