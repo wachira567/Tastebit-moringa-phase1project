@@ -1,0 +1,74 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "name": "Ugali na Sukuma Wiki",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzb-6bIRDnF_6uGAzFV4bi9dqKkQx8NHZ_Ug&s",
+      "price": 150,
+      "description": "Traditional Kenyan staple made with maize flour, served with sautéed collard greens."
+    },
+    {
+      "id": 2,
+      "name": "Nyama Choma",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxE51iwie9vsLuNXczcCJsdhkhKeXLHg_hA&s",
+      "price": 450,
+      "description": "Grilled goat meat, served with kachumbari and ugali."
+    },
+    {
+      "id": 3,
+      "name": "Chapati with Beans",
+      "image": "https://cdn.mafrservices.com/sys-master-root/he0/h3f/49625780518942/180518_1.jpg?im=Resize=480",
+      "price": 200,
+      "description": "Soft layered flatbread served with stewed beans."
+    },
+    {
+      "id": 4,
+      "name": "Pilau Rice",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ounZSZLusxy8RIzRvQkrit7uzlk9XSAeqg&s",
+      "price": 300,
+      "description": "Spiced rice dish cooked with beef, onions, and aromatic spices."
+    },
+    {
+      "id": 5,
+      "name": "Githeri",
+      "image": "https://www.tasteatlas.com/Images/Dishes/90200d42c5254588a0ec27df96271d15.jpg",
+      "price": 180,
+      "description": "A wholesome mix of maize and beans, cooked with vegetables."
+    },
+    {
+      "id": 6,
+      "name": "Tilapia Fry",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwhScEpD8BlKqepdtjsavrpqKhzp4s65ciQ&s",
+      "price": 500,
+      "description": "Deep-fried fresh tilapia served with ugali and greens."
+    },
+    {
+      "id": 7,
+      "name": "Mandazi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--lq8IGlxd-C52yc5mok5rkQLRbDga5gRjg&s",
+      "price": 80,
+      "description": "Fluffy deep-fried dough, perfect for tea time."
+    },
+    {
+      "id": 8,
+      "name": "Matoke Stew",
+      "image": "https://www.enjoyplanta.com/-/media/Project/Upfield/Brands/Blue-Band-Global/Blueband-Consumer-MY/Assets/Recipes/sync-images/d17cfc36-0656-4bd1-b6f1-8ea2f9936be4.png?rev=770a2df70e054dbfaf9ab8a3a3d94a7c&w=1600",
+      "price": 250,
+      "description": "Cooked green bananas in a rich tomato and onion sauce."
+    },
+    {
+      "id": 9,
+      "name": "Mukimo",
+      "image": "https://cookingwithnimo.wordpress.com/wp-content/uploads/2021/01/img_20210102_154041.jpg?w=931",
+      "price": 220,
+      "description": "Mashed potatoes with maize, beans, and greens."
+    },
+    {
+      "id": 10,
+      "name": "Samosa",
+      "image": "https://thecookingfoodie.com/wp-content/uploads/2020/04/IMG_4128-2.jpg",
+      "price": 100,
+      "description": "Crispy pastry filled with spiced minced beef."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button onclick="document.getElementById('homeSection').scrollIntoView()">
+        Home
+      </button>
+      <button onclick="document.getElementById('menuSection').scrollIntoView()">
+        Menu
+      </button>
+      <button
+        onclick="document.getElementById('servicesSection').scrollIntoView()"
+      >
+        Services
+      </button>
+      <button
+        onclick="document.getElementById('aboutSection').scrollIntoView()"
+      >
+        About Us
+      </button>
+      <button
+        onclick="document.getElementById('contactSection').scrollIntoView()"
+      >
+        Contact
+      </button>
+      <button id="cartButton">Cart</button>
+    </nav>
+
+    <section id="homeSection" class="homeSection">
+      <h1>Welcome to Our Food Website</h1>
+      <p>Delicious meals, made with love.</p>
+    </section>
+
+    <section id="menuSection" class="menuSection">
+      <h2>Menu</h2>
+
+      <div class="mealList"></div>
+    </section>
+
+    <section id="servicesSection" class="servicesSection">
+      <h2>Services</h2>
+      <ul>
+        <li>Home Delivery</li>
+        <li>Catering</li>
+        <li>Online Orders</li>
+      </ul>
+    </section>
+
+    <section id="aboutSection" class="aboutSection">
+      <h2>About Us</h2>
+      <p>
+        We are passionate about bringing you the best meals at affordable
+        prices.
+      </p>
+    </section>
+
+    <section id="contactSection" class="contactSection">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

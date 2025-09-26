@@ -1,0 +1,24 @@
+.mealList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.meal-card {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  text-align: center;
+  background: whitesmoke;
+  padding: 10px;
+}
+
+.meal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
