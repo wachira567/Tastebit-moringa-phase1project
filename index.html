@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Website</title>
-
+    <title>TasteBit Food Website</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <button onclick="document.getElementById('homeSection').scrollIntoView()">
         Home
@@ -33,25 +33,56 @@
       <button id="cartButton">Cart</button>
     </nav>
 
+    <!-- Home -->
     <section id="homeSection" class="homeSection">
-      <h1>Welcome to Our Food Website</h1>
-      <p>Delicious meals, made with love.</p>
+      <div class="homeSectionEdit">
+        <h1>Welcome to TasteBit Home of Flavor</h1>
+        <p>Bringing Flavor to Your Table</p>
+      </div>
     </section>
 
+    <!-- Menu -->
     <section id="menuSection" class="menuSection">
       <h2>Menu</h2>
-
+      <!-- Buttons for categories -->
+      <div class="categories">
+        <button data-category="Staple">Staples</button>
+        <button data-category="Meat">Meat Dishes</button>
+        <button data-category="Vegetarian">Vegetarian</button>
+        <button data-category="Snacks">Snacks</button>
+      </div>
+      <!-- Where meals will be shown -->
       <div class="mealList"></div>
+      <!-- Pagination -->
+      <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage">Next</button>
+      </div>
     </section>
 
+    <!-- Services -->
     <section id="servicesSection" class="servicesSection">
-      <h2>Services</h2>
-      <ul>
-        <li>Home Delivery</li>
-        <li>Catering</li>
-        <li>Online Orders</li>
-      </ul>
+      <div class="parallax"></div>
+      
+        <h2>Our Services</h2>
+        <p>
+          At TasteBit, we’re more than just great meals — we deliver
+          experiences.
+        </p>
+        <ul>
+          <li> Fast Home Delivery right to your doorstep</li>
+          <br>
+          <li> Professional Catering for your events</li>
+          <br>
+          <li> Easy Online Ordering with just a few clicks</li>
+          <br>
+          <li> Special Offers and Promotions for our loyal customers</li>
+        </ul>
+      </div>
     </section>
+
+    <!-- About -->
 
     <section id="aboutSection" class="aboutSection">
       <h2>About Us</h2>
@@ -59,24 +90,55 @@
         We are passionate about bringing you the best meals at affordable
         prices.
       </p>
+
+      <h3>What Our Customers Say</h3>
+      <div id="reviewsContainer" class="reviews-container"></div>
     </section>
+    
+<!--     contact section -->
 
     <section id="contactSection" class="contactSection">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>TasteBit Restaurant</h3>
+          <p><strong>Location:</strong> Nairobi, Kenya</p>
+          <p><strong>Phone:</strong> 0709 008 800</p>
+          <p><strong>Email:</strong> Tastebit@gmail.com</p>
+          <p><strong>Hours:</strong> Mon–Sun, 8:00 AM – 10:00 PM</p>
+        </div>
 
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
+        <!-- Contact Form -->
 
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message"></textarea><br />
+        <form id="reviewForm">
+          <h1 class="reviewInvite">
+            We’d love to hear from you! Share your thoughts or leave us a review
+            below.
+          </h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
 
-        <button type="submit">Send</button>
-      </form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="review">Message:</label>
+          <textarea id="review" name="review"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </section>
 
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="cartTotal">Total: Ksh 0</p>
+      <button id="closeCart">Close</button>
+    </div>
+
+    <!-- JavaScript -->
     <script src="index.js"></script>
   </body>
 </html>
