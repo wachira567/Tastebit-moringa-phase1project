@@ -1,74 +1,107 @@
 {
   "meals": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ugali na Sukuma Wiki",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzb-6bIRDnF_6uGAzFV4bi9dqKkQx8NHZ_Ug&s",
       "price": 150,
-      "description": "Traditional Kenyan staple made with maize flour, served with sautéed collard greens."
+      "description": "Traditional Kenyan staple made with maize flour, served with sautéed collard greens.",
+      "category": "Staple"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Nyama Choma",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxE51iwie9vsLuNXczcCJsdhkhKeXLHg_hA&s",
       "price": 450,
-      "description": "Grilled goat meat, served with kachumbari and ugali."
+      "description": "Grilled goat meat, served with kachumbari and ugali.",
+      "category": "Meat"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Chapati with Beans",
       "image": "https://cdn.mafrservices.com/sys-master-root/he0/h3f/49625780518942/180518_1.jpg?im=Resize=480",
       "price": 200,
-      "description": "Soft layered flatbread served with stewed beans."
+      "description": "Soft layered flatbread served with stewed beans.",
+      "category": "Staple"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Pilau Rice",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ounZSZLusxy8RIzRvQkrit7uzlk9XSAeqg&s",
       "price": 300,
-      "description": "Spiced rice dish cooked with beef, onions, and aromatic spices."
+      "description": "Spiced rice dish cooked with beef, onions, and aromatic spices.",
+      "category": "Staple"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Githeri",
       "image": "https://www.tasteatlas.com/Images/Dishes/90200d42c5254588a0ec27df96271d15.jpg",
       "price": 180,
-      "description": "A wholesome mix of maize and beans, cooked with vegetables."
+      "description": "A wholesome mix of maize and beans, cooked with vegetables.",
+      "category": "Vegetarian"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Tilapia Fry",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwhScEpD8BlKqepdtjsavrpqKhzp4s65ciQ&s",
       "price": 500,
-      "description": "Deep-fried fresh tilapia served with ugali and greens."
+      "description": "Deep-fried fresh tilapia served with ugali and greens.",
+      "category": "Meat"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Mandazi",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--lq8IGlxd-C52yc5mok5rkQLRbDga5gRjg&s",
       "price": 80,
-      "description": "Fluffy deep-fried dough, perfect for tea time."
+      "description": "Fluffy deep-fried dough, perfect for tea time.",
+      "category": "Snacks"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Matoke Stew",
-      "image": "https://www.enjoyplanta.com/-/media/Project/Upfield/Brands/Blue-Band-Global/Blueband-Consumer-MY/Assets/Recipes/sync-images/d17cfc36-0656-4bd1-b6f1-8ea2f9936be4.png?rev=770a2df70e054dbfaf9ab8a3a3d94a7c&w=1600",
+      "image": "https://www.enjoyplanta.com/-/media/Project/Upfield/Brands/Blue-Band-Global/Blueband-Consumer-MY/Assets/Recipes/sync-images/d17cfc36-0656-4bd1-b6f1-8ea2f9936be4.png",
       "price": 250,
-      "description": "Cooked green bananas in a rich tomato and onion sauce."
+      "description": "Cooked green bananas in a rich tomato and onion sauce.",
+      "category": "Vegetarian"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Mukimo",
       "image": "https://cookingwithnimo.wordpress.com/wp-content/uploads/2021/01/img_20210102_154041.jpg?w=931",
       "price": 220,
-      "description": "Mashed potatoes with maize, beans, and greens."
+      "description": "Mashed potatoes with maize, beans, and greens.",
+      "category": "Staple"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Samosa",
       "image": "https://thecookingfoodie.com/wp-content/uploads/2020/04/IMG_4128-2.jpg",
       "price": 100,
-      "description": "Crispy pastry filled with spiced minced beef."
+      "description": "Crispy pastry filled with spiced minced beef.",
+      "category": "Snacks"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "259b",
+      "name": "washira",
+      "email": "treinlojo@gmail.com",
+      "text": "Excellent food offered"
+    },
+    {
+      "id": "0a28",
+      "name": "kkkk",
+      "text": "Good food"
+    },
+    {
+      "id": "87ea",
+      "name": "washira",
+      "text": "Excellent services"
+    },
+    {
+      "id": "61e2",
+      "name": "hbuygewud",
+      "text": "5 star service"
     }
   ]
 }
