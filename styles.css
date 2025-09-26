@@ -127,3 +127,56 @@
   border-radius: 6px;
   margin-bottom: 10px;
 }
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  background: #444;
+  color: #f5f5f5;
+  border: 1px solid #666;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #ffcc70;
+  color: #222;
+}
+/* Cart Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 300px;
+  height: 100%;
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+.cart-sidebar.open {
+  right: 0;
+}
+.cart-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.cart-sidebar li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  cursor: pointer;
+}
